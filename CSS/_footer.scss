@@ -1,0 +1,37 @@
+footer{
+    p{
+        text-align: center;
+        font-family: $fuente_2;
+        font-size: 14px;
+        color: $color;
+        line-height: 22px;
+        margin: 10% 0%;
+    }
+    .enlaces{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 10% 0%;
+        color: #060A24;
+    }
+    @media screen and (min-width: 1000px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+
+        p{
+            margin: 10px 60px;
+        }
+
+        .enlaces{
+            margin:10px 60px;
+            a{  
+                margin-right: 30px;
+            }
+
+        }
+    }
+}
