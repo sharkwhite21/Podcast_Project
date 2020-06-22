@@ -37,7 +37,11 @@ header {
             padding: 16px 5%;
             display: block; }
             header nav .menu ul li a:hover {
-              color: #0000EC; }
+              background: unset;
+              color: #00F3BB;
+              text-decoration: line-through; }
+            header nav .menu ul li a:active {
+              color: rgba(6, 10, 36, 0.56); }
       header nav .menu input[type="checkbox"]:checked ~ ul {
         height: 200px;
         transition: height 0.5s ease-in-out;
@@ -374,8 +378,9 @@ footer .enlaces {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin: 10% 0%;
-  color: #060A24; }
+  margin: 10% 0%; }
+  footer .enlaces a {
+    color: #060A24; }
 @media screen and (min-width: 1000px) {
   footer {
     display: flex;
@@ -389,7 +394,8 @@ footer .enlaces {
     footer .enlaces {
       margin: 10px 60px; }
       footer .enlaces a {
-        margin-right: 30px; } }
+        margin-right: 30px;
+        color: #060A24; } }
 
 * {
   padding: 0%;

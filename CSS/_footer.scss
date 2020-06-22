@@ -12,7 +12,10 @@ footer{
         flex-wrap: nowrap;
         justify-content: space-around;
         margin: 10% 0%;
-        color: #060A24;
+        a{
+            color: #060A24;
+        }
+        
     }
     @media screen and (min-width: 1000px){
         display: flex;
@@ -30,6 +33,7 @@ footer{
             margin:10px 60px;
             a{  
                 margin-right: 30px;
+                color: #060A24;
             }
 
         }

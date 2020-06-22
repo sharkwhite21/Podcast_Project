@@ -36,7 +36,13 @@ header{
                             padding: 16px 5%;
                             display: block;
                             &:hover{
-                                color: $bg-menu;
+                                background: unset;
+                                color: $bottom_1;
+                                text-decoration: line-through;                                
+                            }
+
+                            &:active{
+                                color:$color_active;
                             }
                         }                        
                     }
