@@ -120,6 +120,7 @@ main {
     line-height: 42px;
     margin-bottom: 4%;
     padding: 2% 5%;
+    width: 82%;
     font-weight: 400; }
   main .primera_seccion p {
     font-family: "IBM Plex Mono", monospace;
