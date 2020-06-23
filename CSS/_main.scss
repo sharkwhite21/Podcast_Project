@@ -11,9 +11,6 @@ main{
             margin-bottom: 4%;
             padding: 2% 5%;
             font-weight: 400;
-            &:last-child{
-                color: $bg-menu;
-            }
         }
         
         p{
@@ -232,9 +229,9 @@ main{
                 font-size: 64px;
                 margin: 10% 6% 0%;
                 font-weight: 400;
-                &:last-child{
-                    color:red;
-                } 
+                span{
+                    color: $bg-menu; 
+                }
             }
 
             p{

@@ -17,17 +17,17 @@
                 <span></span>
                 <span></span>
                 <ul class="nav-items">                
-                    <li><a href="lista_episodios">EPISODIOS</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">ENTREVISTAS</a></li>
-                    <li><a href="#">TÓPICOS</a></li>
+                    <li><a href="#Episodios">EPISODIOS</a></li>
+                    <li><a href="#Nosotros">NOSOTROS</a></li>
+                    <li><a href="#Entrevistas">ENTREVISTAS</a></li>
+                    <li><a href="#Temas">TÓPICOS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="primera_seccion">
-            <h1>Hello <s>world</s> pale blue dot.</h1>
+            <h1>Hello <s>world</s> pale blue dot <span>.</span></h1>
 
             <p id="mobile" >Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
             
@@ -36,7 +36,7 @@
             <button>CONOCE MÁS</button>
         </section>
 
-        <div class="listas_episodios">
+        <div class="listas_episodios" id="Episodios">
             <section class="background">
 
                 <h2>Episodios</h2>
@@ -53,7 +53,7 @@
 
         </div>
 
-        <section class="tercera_seccion">
+        <section class="tercera_seccion" id="Nosotros">
             <div class="phone">
                 <img src="Sources/phone.png" alt="phone">
             </div>
@@ -71,7 +71,7 @@
 
         </section>
 
-        <section class="cuarta_seccion">
+        <section class="cuarta_seccion" id="Entrevistas">
             <h2>Invitadas/os estelares</h2>
 
             <div class="imagenes">
@@ -85,7 +85,7 @@
 
         </section>
 
-        <section class="quinta_seccion">
+        <section class="quinta_seccion" id="Temas">
             <h2>Algunos de nuestros temas</h2>
 
             <div class="temas">
