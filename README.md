@@ -1,3 +1,5 @@
-# Proyecto_Podcast
+# Podcast_Project
 
-Proyecto realizado para la culminacion del primer bloque de la carrera Desarrollador Frontend de Acamica.
+Project carried out in the study of Acamica's Frontend Developer career.
+
+Presentation page for a podcast page, using Responsive design, SASS preprocessor.
