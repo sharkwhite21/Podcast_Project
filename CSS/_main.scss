@@ -1,6 +1,7 @@
 
 main{
     padding-top: 30px;
+    width: 90%;
     .primera_seccion{
 
         h1{
@@ -30,7 +31,7 @@ main{
 
         button{
             background: $bottom_1;
-            width: 90%;
+            width: 84%;
             font-size: 1em;
             text-align: center;
             line-height: 22px;
@@ -40,14 +41,14 @@ main{
             font-weight: 500;
             
             &:hover{
-                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                background-image: linear-gradient(225deg, orange 0%, red 100%);
                 color: $bg-primary;
             }    
         }
     }
-    .listas_episodios{
+    .listas_recomendados{
         padding-top: 70x;
-        height: 1250px;
+        height: 1800px;
         position: relative;
         overflow: hidden;
         transform-origin: top right;
@@ -56,7 +57,7 @@ main{
         .background{
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(225deg,#0000FF 0%, $bg-secundary 100%);
+            background-image: linear-gradient(225deg, orange 0%, red 100%);
             clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
         }
 
@@ -69,25 +70,45 @@ main{
             font-weight: 400;
             
         }
+
         .lista{
             flex-flow: column nowrap;
             align-content: center;
             align-items: center;
             margin: 11px;
             display: flex;
-            
-            iframe{               
-                margin: 11px auto;
-                width: 100%;
-                height: 232px;
-                            
-            }
+            .caja_recomendados{               
+                    width: 40%;
+                    height: 232px;
+                    display: flex;
+                    margin-top: 65px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .imagen_producto{
+                        height: 250px;
+                        width: 190px;
+                    } 
+                    .titulo_producto,
+                    .precio_producto{
+                        font-size: 18px;
+                        font-family: $fuente_2;
+                        color: white;
+                    }
+                    
+                    .boton_comprar{
+                        width: 80px;
+                        height: 35px;
+                        padding: 1%;
+                        margin-top: 10px;
+                    }
+                }
         }
         
     }
     .tercera_seccion{   
 
-        margin-bottom: 54px;
+        margin-bottom: 100px;
         padding-top: 70px;
         height: 530px;
 
@@ -99,7 +120,7 @@ main{
             margin-top: 48px;
             img{
                 width: 360px;
-                height: 519px;
+                height: 430px;
             }
             
         }
@@ -155,7 +176,6 @@ main{
     .quinta_seccion{
         display: flex;
         flex-direction: column;
-        
         color:$color;
 
         h2{
@@ -168,8 +188,13 @@ main{
         }
         .temas{
 
+            .orden{
+                display: flex;
+                flex-direction: column;
+            }
+
             img{
-            margin: 15% 33% 5%;
+            margin: 0 auto;
             }
 
             p{
@@ -186,7 +211,7 @@ main{
         width: 100%;
         height: 320px;
         margin-top: 10%;
-        background-image: linear-gradient(225deg,#0000FF 0%, $bg-secundary 100%);
+        background-image: linear-gradient(225deg, orange 0%, red 100%);
         clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
 
         h2{
@@ -211,13 +236,13 @@ main{
             font-family: $fuente_2;
             font-weight: 500;
             &:hover{
-                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
                 color: $bg-primary;
             }    
         }
     }
 
     @media screen and (min-width: 1000px){
+        width: 100%;
         .primera_seccion{
 
             #mobile{
@@ -249,14 +274,14 @@ main{
             }
         }
 
-        .listas_episodios{
-            height: 1042.6px;
+        .listas_recomendados{
+            height: 1160px;
             .background{
                 clip-path: polygon(0 13%, 100% 0%, 100% 88%, 0% 100%);
             }
 
             h2{
-                padding: 12% 11% 0%;
+                padding: 10% 11% 0%;
                 font-size: 48px;
                 
             }
@@ -265,10 +290,32 @@ main{
                 flex-direction: row;
                 flex-wrap: wrap;
                 display: flex;
-                iframe{               
+                justify-content: center;
+                .caja_recomendados{               
                     width: 40%;
                     height: 232px;
-                    margin:5% -2% 0% 7%;            
+                    display: flex;
+                    margin-top: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .imagen_producto{
+                        height: 250px;
+                        width: 190px;
+                    } 
+                    .titulo_producto,
+                    .precio_producto{
+                        font-size: 18px;
+                        font-family: $fuente_2;
+                        color: white;
+                    }
+                    
+                    .boton_comprar{
+                        width: 80px;
+                        height: 35px;
+                        padding: 1%;
+                        margin-top: 10px;
+                    }
                 }
             }
 
@@ -278,12 +325,15 @@ main{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 180px;
+            height: 350px;
 
             .phone{
                 margin-left: 190px;
-                top:-250px;
+                top:-210px;
                 left: 0px;
+                img{
+                    width: auto !important;
+                }
             }
 
             .texto{
@@ -328,12 +378,11 @@ main{
         }
 
         .quinta_seccion{
-           
+            margin-top: 20px;
+
             h2{  
                 font-size: 48px;
-                margin: 70px 135px 15px;
-
-
+                margin: 0 auto;
             }
 
             .temas{
@@ -341,14 +390,16 @@ main{
                 flex-direction: row;
                 margin-left: 90px;
                 .orden{
+                    display: block;
                     width: 19%;
-                    margin-left:45px;
+                    margin-left:70px;
                     img{
                         margin: 40% 28% 5%;
                     }
     
                     p{
                         font-size: 24px;
+                        width: 80%;
                     }
                 }
             }
@@ -358,6 +409,9 @@ main{
             margin-top: 2%;
             height: 460px;
             clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             h2{
                 padding-top: 150px;
                 font-size: 48px;
@@ -367,7 +421,6 @@ main{
             button{
                 width: 345px;
                 height: 56px;
-                margin-left: 490px;
                 padding:13px 0;                
             }
 

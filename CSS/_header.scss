@@ -1,11 +1,11 @@
 header{
-        width: 100%;
+        width: 95%;
         height: 44px;
         top: 0px;
         padding: 10px 5%;
         .logo{
             float: left;
-            width: 24px;
+            width: 120px;
         }
 
         nav{
@@ -104,10 +104,11 @@ header{
 
         @media screen and (min-width: 1000px){
 
+            width: 100%;
             padding: 10px 5px 10px 70px;
             
             .logo{
-                width: 36px;
+                width: 250px;
             }
                         
             nav{
@@ -124,7 +125,7 @@ header{
                         
                         width: 550px;
                         li{
-                            padding: 5px 25px;
+                            padding: 5px 16px;
                             display: inline-block;
                             background: $bg-primary;
                             
@@ -137,7 +138,7 @@ header{
                                 
                                 &:hover{
                                     background: unset;
-                                    color: $bottom_1;
+                                    color: red;
                                     text-decoration: line-through;
 
                                     
